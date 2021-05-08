@@ -25,6 +25,11 @@ Use Webbrowser
 ``` 
 gcloud auth login
 gcloud config set project k8s-workshop-intern
+
+gcloud config set compute/zone europe-west3-c
+gcloud config set compute/region europe-west3
+
+gcloud container clusters create gke-tom --num-nodes=1
 sudo gcloud auth configure-docker
 ```
 
