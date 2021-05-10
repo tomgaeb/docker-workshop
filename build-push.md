@@ -9,13 +9,13 @@ cd kubernetes-engine-samples/hello-app
 
 ## Build image
 ```
-docker build -t eu.gcr.io/k8s-workshop-intern/hello-app-tom:v1 .
+docker build -t eu.gcr.io/dpa-gke-workshop/hello-app-tom:v1 .
 ```
 
 
 ## Push image
 ```
-docker push eu.gcr.io/k8s-workshop-intern/hello-app-tom:v1
+docker push eu.gcr.io/dpa-gke-workshop/hello-app-tom:v1
 ```
 
 ## Connect to VM instance
@@ -24,10 +24,11 @@ Use Webbrowser
 ## Google Auth
 ``` 
 gcloud auth login
-gcloud config set project k8s-workshop-intern
+gcloud config set project dpa-gke-workshop
 
-gcloud config set compute/zone europe-west3-c
 gcloud config set compute/region europe-west3
+gcloud config set compute/zone europe-west3-c
+
 
 gcloud container clusters create gke-tom --num-nodes=1
 sudo gcloud auth configure-docker
@@ -36,6 +37,6 @@ sudo gcloud auth configure-docker
 
 ## Pull image
 ```
-sudo docker pull eu.gcr.io/k8s-workshop-intern/hello-app-tom:v1
+sudo docker pull eu.gcr.io/dpa-gke-workshop/hello-app-tom:v1
 sudo docker images
 ```

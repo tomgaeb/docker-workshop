@@ -1,0 +1,9 @@
+FROM golang:latest
+WORKDIR /app
+
+COPY hello-world.go .
+COPY go.* ./
+RUN go mod download
+RUN go build -o hello-world .
+
+CMD ./hello-world
