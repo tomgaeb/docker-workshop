@@ -1,12 +1,13 @@
 # Docker Workshop
 
 1. Install docker
-2. nginx Demo
-3. Build & push
+2. nginx 
+3. Multi Stage
+4. Build & push
+5. Docker with GCP
 
 ## Links
 https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/
-
 https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/
 
 

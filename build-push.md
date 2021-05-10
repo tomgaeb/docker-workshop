@@ -12,26 +12,9 @@ cd kubernetes-engine-samples/hello-app
 docker build -t eu.gcr.io/dpa-gke-workshop/hello-app-tom:v1 .
 ```
 
-
 ## Push image
 ```
 docker push eu.gcr.io/dpa-gke-workshop/hello-app-tom:v1
-```
-
-## Connect to VM instance
-Use Webbrowser
-
-## Google Auth
-``` 
-gcloud auth login
-gcloud config set project dpa-gke-workshop
-
-gcloud config set compute/region europe-west3
-gcloud config set compute/zone europe-west3-c
-
-
-gcloud container clusters create gke-tom --num-nodes=1
-sudo gcloud auth configure-docker
 ```
 
 
