@@ -1,6 +1,5 @@
 FROM golang:1.8-alpine3.6
 
-
 COPY . /go/src/croc-hunter
 COPY static/ static/
 
