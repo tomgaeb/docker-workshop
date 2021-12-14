@@ -1,0 +1,3 @@
+FROM gcc
+COPY hello.c .
+RUN gcc -static -o hello hello.c
